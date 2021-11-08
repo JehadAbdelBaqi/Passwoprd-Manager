@@ -1,9 +1,9 @@
 # Password-Manager
 A password manager which creates a JSON file and stores your password which can be generated and the website and email address used for it
 
-    from tkinter impo
+    from tkinter import *
     from tkinter import messag
-    from random import choice, randint, shu
+    from random import choice, randint, shuffle
     import pyperclip
     import json
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
