@@ -74,6 +74,7 @@ def store_data():
 
 
 def find_password():
+
     detail_search = website_input.get()
     try:
         with open("data.json") as key_file:
