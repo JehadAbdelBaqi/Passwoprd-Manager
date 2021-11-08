@@ -2,9 +2,13 @@
 A password manager which creates a JSON file and stores your password which can be generated and the website and email address used for it
 
 from tkinter import *
+
 from tkinter import messagebox
+
 from random import choice, randint, shuffle
+
 import pyperclip
+
 import json
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 
@@ -35,6 +39,7 @@ def generate_password():
 
 
 def store_data():
+
     website_get = website_input.get()
     password_get = password_input.get()
     email_get = email_input.get()
