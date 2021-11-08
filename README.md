@@ -92,9 +92,10 @@ def find_password():
 
 
 # ---------------------------- UI SETUP ------------------------------- #
-window = Tk()
+    window = Tk()
 
 window.title("Password manager")
+
 window.config(padx=50, pady=50)
 
 canvas = Canvas(width=200, height=200, highlightthickness=0)
@@ -114,22 +115,35 @@ email_username_label = Label(text="Email/Username:")
 email_username_label.grid(column=0, row=2)
 
 password_label = Label(text="Password:")
+
 password_label.grid(column=0, row=3)
 
 website_input = Entry()
+
 website_input.grid(column=1, row=1)
+
 website_input.focus()
+
 email_input = Entry(width=35)
+
 email_input.grid(column=1, row=2, columnspan=2)
+
 email_input.insert(0, "jehad@mail.org")
+
 password_input = Entry(width=21)
 password_input.grid(column=1, row=3)
 
+
 generate_password_btn = Button(text="Generate Password", command=generate_password)
+
 generate_password_btn.grid(column=2, row=3)
+
 add_button = Button(text="Add", width=36, command=store_data)
+
 add_button.grid(column=1, row=4, columnspan=2)
+
 search_button = Button(text="Search", width=13, command=find_password)
+
 search_button.grid(column=2, row=1)
 
 window.mainloop()
